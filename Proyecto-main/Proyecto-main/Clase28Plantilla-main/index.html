@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Registrar Personas</title>
+  <style>
+    /* CSS styles */
+  </style>
+</head>
+<body>
+  <div id="start-screen" class="container">
+    <h2>Proyecto Mapache!</h2>
+    <button onclick="showSignUpForm()">Registrar Persona</button>
+    
+  </div>
+
+  <div id="signup-screen" class="container" style="display: none;">
+    <h2>Proyecto Mapache</h2>
+    <form id="signup-form">
+      <input type="text" id="name-input" placeholder="Name" required>
+      <input type="text" id="last-name-input" placeholder="Last-name" required>
+      <select id="option-select" required>
+        <option value="">Select an option</option>
+        <option value="CC">Cédula de Ciudadania</option>
+        <option value="TI">Tarjeta de Identidad</option>
+        <option value="CE">Cédula de Ciudadanía</option>
+      </select>
+      <input type="text" id="id-input" placeholder="ID" required>
+      <input type="text" id="job-input" placeholder="Job" required>      
+      <button type="button" onclick="registrarPersona()">Registrar</button>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <!--
+  <div id="login-screen" class="container" style="display: none;">
+    <h2>Log In</h2>
+    <form id="login-form">
+      <input type="text" id="id-login-input" placeholder="ID" required>
+      <button type="submit">Log In</button>
+    </form>
+  </div>
+-->
+
+  <!-- Your JavaScript code here -->
+  <script src="sketch.js"></script>
+</body>
+</html>
